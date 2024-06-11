@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Simple Calculator</title>
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <input
+          type="text"
+          class="result_no"
+          placeholder="enter number"
+          value=""
+          readonly
+        />
+        <div class="num">
+          <button class="btn left" onclick="val('1')">1</button>
+          <button class="btn" onclick="val('2')">2</button>
+          <button class="btn" onclick="val('3')">3</button>
+          <button class="btn op" onclick="val('+')">+</button>
+          <button class="btn left" onclick="val('4')">4</button>
+          <button class="btn" onclick="val('5')">5</button>
+          <button class="btn" onclick="val('6')">6</button>
+          <button class="btn op" onclick="val('-')">-</button>
+          <button class="btn left" onclick="val('7')">7</button>
+          <button class="btn" onclick="val('8')">8</button>
+          <button class="btn" onclick="val('9')">9</button>
+          <button class="btn op" onclick="val('*')">*</button>
+          <button class="btn left" onclick="val('.')">.</button>
+          <button class="btn" onclick="val('0')">0</button>
+          <button class="btn" onclick="val('00')">00</button>
+          <button class="btn op" onclick="val('/')">/</button>
+          <button class="btn left" onclick="val('C')">C</button>
+          <button class="btn" onclick="val('')"></button>
+          <button class="btn" onclick="val('=')">=</button>
+          <button class="btn op" onclick="val('%')">%</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
